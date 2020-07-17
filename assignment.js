@@ -59,8 +59,10 @@ function tinyFriend(names) {
     let shortestName = names[0];
     for (let i = 0; i < names.length; i++) {
         let currentName = names[i];
-        if (currentName.length < shortestName.length) {
+        if (currentName.length < shortestName.length || currentName.length == shortestName.length) {
             shortestName = currentName;
+            /**try to add if we have two or more than two shortest names 
+             * how to give all in output.. but can't do that.  */
         }
     }
     return shortestName;
